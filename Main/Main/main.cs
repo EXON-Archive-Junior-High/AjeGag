@@ -60,6 +60,7 @@ namespace Main
                         break;
                     }
                 }
+                msg.Text = "틀렸습니다.";
 
             }
             else
