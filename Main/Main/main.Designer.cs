@@ -56,17 +56,19 @@
             this.result.ShadowDecoration.Parent = this.result;
             this.result.Size = new System.Drawing.Size(233, 33);
             this.result.TabIndex = 0;
+            this.result.KeyDown += new System.Windows.Forms.KeyEventHandler(this.result_KeyDown);
             // 
             // problem
             // 
             this.problem.AutoSize = true;
             this.problem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.problem.Location = new System.Drawing.Point(292, 154);
+            this.problem.Location = new System.Drawing.Point(210, 154);
             this.problem.Name = "problem";
             this.problem.Size = new System.Drawing.Size(88, 25);
             this.problem.TabIndex = 1;
             this.problem.Text = "문제이름";
             this.problem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.problem.UseMnemonic = false;
             // 
             // submission
             // 

@@ -21,19 +21,54 @@ namespace Main
 
         private void main_Load(object sender, EventArgs e)
         {
-            Data data = new Data();
-
-            data.Problem(ref key, ref value);
-
-            problem.Text = key;
+            GetAje();
         }
 
         private void submission_Click(object sender, EventArgs e)
         {
+            Submit();
+        }
+
+        private void result_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Submit();
+            }
+        }
+
+        private void Submit()
+        {
+
             if (result.Text == value)
             {
-                this.Close();
+                GetAje();
+                result.Text = string.Empty;
             }
+            else if (value.Contains("|"))
+            {
+                string[] v = value.Split('|');
+                for (int i = 0; i < v.Length; i++)
+                {
+                    if (v[i] == result.Text)
+                    {
+                        GetAje();
+                        result.Text = string.Empty;
+                    }
+                }
+
+            }
+        }
+
+        private void GetAje()
+        {
+            Data data = new Data();
+
+            data.Problem(ref key, ref value);
+
+
+            problem.Text = key;
+
         }
     }
 }
