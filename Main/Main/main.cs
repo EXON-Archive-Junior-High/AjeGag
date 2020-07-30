@@ -60,11 +60,13 @@ namespace Main
                         break;
                     }
                 }
+                result.Text = string.Empty;
                 msg.Text = "틀렸습니다.";
 
             }
             else
             {
+                result.Text = string.Empty;
                 msg.Text = "틀렸습니다.";
             }
         }
