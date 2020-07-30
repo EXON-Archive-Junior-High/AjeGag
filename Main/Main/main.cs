@@ -22,6 +22,7 @@ namespace Main
         private void main_Load(object sender, EventArgs e)
         {
             GetAje();
+            timer.Start();
         }
 
         private void submission_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace Main
             {
                 GetAje();
                 result.Text = string.Empty;
+                msg.Text = "맞았습니다!";
             }
             else if (value.Contains("|"))
             {
@@ -54,10 +56,21 @@ namespace Main
                     {
                         GetAje();
                         result.Text = string.Empty;
+                        msg.Text = "맞았습니다!";
+                        break;
                     }
                 }
 
             }
+            else
+            {
+                msg.Text = "틀렸습니다.";
+            }
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+        
         }
 
         private void GetAje()

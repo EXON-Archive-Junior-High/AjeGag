@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.result = new Guna.UI2.WinForms.Guna2TextBox();
             this.problem = new Guna.UI.WinForms.GunaLabel();
             this.submission = new Guna.UI2.WinForms.Guna2Button();
+            this.msg = new Guna.UI.WinForms.GunaLabel();
+            this.time = new Guna.UI.WinForms.GunaLabel();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // result
@@ -87,11 +91,40 @@
             this.submission.Text = "제출";
             this.submission.Click += new System.EventHandler(this.submission_Click);
             // 
+            // msg
+            // 
+            this.msg.AutoSize = true;
+            this.msg.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.msg.Location = new System.Drawing.Point(210, 290);
+            this.msg.Name = "msg";
+            this.msg.Size = new System.Drawing.Size(0, 20);
+            this.msg.TabIndex = 3;
+            this.msg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.msg.UseMnemonic = false;
+            // 
+            // time
+            // 
+            this.time.AutoSize = true;
+            this.time.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time.Location = new System.Drawing.Point(210, 326);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(53, 25);
+            this.time.TabIndex = 4;
+            this.time.Text = "Time";
+            this.time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.time.UseMnemonic = false;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.time);
+            this.Controls.Add(this.msg);
             this.Controls.Add(this.submission);
             this.Controls.Add(this.problem);
             this.Controls.Add(this.result);
@@ -108,6 +141,9 @@
         private Guna.UI2.WinForms.Guna2TextBox result;
         private Guna.UI.WinForms.GunaLabel problem;
         private Guna.UI2.WinForms.Guna2Button submission;
+        private Guna.UI.WinForms.GunaLabel msg;
+        private Guna.UI.WinForms.GunaLabel time;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
