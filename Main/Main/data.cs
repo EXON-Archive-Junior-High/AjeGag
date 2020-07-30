@@ -10,6 +10,7 @@ namespace Main
     {
         public Dictionary<string, string> Ajegeg = new Dictionary<string, string>();
 
+
         public Data()
         {
             Reset();
@@ -21,10 +22,15 @@ namespace Main
 
         }
 
-        public string Problem()
+        public void Problem(ref string key, ref string value)
         {
             Random rand = new Random();
-            return Ajegeg.ElementAt(rand.Next(0, Ajegeg.Count)).Key;
+
+            int num = rand.Next(0, Ajegeg.Count);
+            key = Ajegeg.ElementAt(num).Key;
+
+            value = Ajegeg[key];
+
         }
     }
 }

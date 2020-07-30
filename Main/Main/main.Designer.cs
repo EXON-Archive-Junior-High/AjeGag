@@ -30,7 +30,7 @@
         {
             this.result = new Guna.UI2.WinForms.Guna2TextBox();
             this.problem = new Guna.UI.WinForms.GunaLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.submission = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // result
@@ -68,26 +68,29 @@
             this.problem.Text = "문제이름";
             this.problem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2Button1
+            // submission
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(254, 235);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "guna2Button1";
+            this.submission.BorderRadius = 10;
+            this.submission.CheckedState.Parent = this.submission;
+            this.submission.CustomImages.Parent = this.submission;
+            this.submission.FillColor = System.Drawing.Color.DimGray;
+            this.submission.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submission.ForeColor = System.Drawing.Color.White;
+            this.submission.HoverState.Parent = this.submission;
+            this.submission.Location = new System.Drawing.Point(242, 232);
+            this.submission.Name = "submission";
+            this.submission.ShadowDecoration.Parent = this.submission;
+            this.submission.Size = new System.Drawing.Size(180, 45);
+            this.submission.TabIndex = 2;
+            this.submission.Text = "제출";
+            this.submission.Click += new System.EventHandler(this.submission_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.submission);
             this.Controls.Add(this.problem);
             this.Controls.Add(this.result);
             this.Name = "Main";
@@ -102,7 +105,7 @@
 
         private Guna.UI2.WinForms.Guna2TextBox result;
         private Guna.UI.WinForms.GunaLabel problem;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button submission;
     }
 }
 

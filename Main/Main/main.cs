@@ -17,11 +17,23 @@ namespace Main
             InitializeComponent();
         }
 
+        string key, value = string.Empty;
+
         private void main_Load(object sender, EventArgs e)
         {
             Data data = new Data();
 
-            problem.Text = data.Problem();
+            data.Problem(ref key, ref value);
+
+            problem.Text = key;
+        }
+
+        private void submission_Click(object sender, EventArgs e)
+        {
+            if (result.Text == value)
+            {
+                this.Close();
+            }
         }
     }
 }
