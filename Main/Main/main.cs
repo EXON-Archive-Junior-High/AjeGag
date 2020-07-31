@@ -23,6 +23,7 @@ namespace Main
         {
             GetAje();
             timer.Start();
+
         }
 
         private void submission_Click(object sender, EventArgs e)
@@ -81,7 +82,6 @@ namespace Main
             Data data = new Data();
 
             data.Problem(ref key, ref value);
-
 
             problem.Text = key;
 
