@@ -7,7 +7,7 @@ namespace socksrv
 {
     class Socket
     {
-        static void Main()
+        static void socket()
         {
             // (1) 소켓 객체 생성 (TCP 소켓)
             System.Net.Sockets.Socket sock = new System.Net.Sockets.Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

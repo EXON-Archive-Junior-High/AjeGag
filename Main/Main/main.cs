@@ -50,6 +50,7 @@ namespace Main
             }
             else if (value.Contains("|"))
             {
+                int isTrue = 0;
                 string[] v = value.Split('|');
                 for (int i = 0; i < v.Length; i++)
                 {
@@ -58,11 +59,16 @@ namespace Main
                         GetAje();
                         result.Text = string.Empty;
                         msg.Text = "맞았습니다!";
+                        isTrue = 1;
                         break;
                     }
                 }
-                result.Text = string.Empty;
-                msg.Text = "틀렸습니다.";
+                if (isTrue == 0)
+                {
+                    result.Text = string.Empty;
+                    msg.Text = "틀렸습니다.";
+                }
+
 
             }
             else
