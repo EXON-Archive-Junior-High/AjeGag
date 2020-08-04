@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Main
 {
-    public class Data
+    public class Data 
     {
+        // 아재개그 모음
         public Dictionary<string, string> Ajegag = new Dictionary<string, string>();
 
 
@@ -16,6 +17,7 @@ namespace Main
             Reset();
         }
 
+        // 리셋 함수
         public void Reset()
         {
             Ajegag.Add("소금의 유통기한은 몇일일까?", "천일");
@@ -48,13 +50,10 @@ namespace Main
         {
             Random rand = new Random();
 
-            int num = rand.Next(0, Ajegag.Count);
+            int num = rand.Next(0, Ajegag.Count); // 랜덤으로 아재개그 하나 뽑기
             key = Ajegag.ElementAt(num).Key;
 
-
-
             value = Ajegag[key];
-
         }
     }
 }

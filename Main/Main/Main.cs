@@ -39,6 +39,7 @@ namespace Main
             }
         }
 
+        // 답인지 아닌지 판별하는 함수
         private void Submit()
         {
 
