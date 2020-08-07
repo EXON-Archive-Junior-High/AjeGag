@@ -31,7 +31,7 @@ namespace Main
 
         private void End_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            
         }
     }
 }

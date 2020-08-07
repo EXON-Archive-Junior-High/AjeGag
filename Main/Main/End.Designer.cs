@@ -40,7 +40,7 @@
             this.restart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.restart.ForeColor = System.Drawing.Color.White;
             this.restart.HoverState.Parent = this.restart;
-            this.restart.Location = new System.Drawing.Point(236, 269);
+            this.restart.Location = new System.Drawing.Point(257, 270);
             this.restart.Name = "restart";
             this.restart.ShadowDecoration.Parent = this.restart;
             this.restart.Size = new System.Drawing.Size(180, 45);
@@ -76,6 +76,8 @@
             this.Controls.Add(this.score);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.restart);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "End";
             this.Text = "End";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.End_FormClosing);

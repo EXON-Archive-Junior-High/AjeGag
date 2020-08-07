@@ -34,6 +34,7 @@
             this.msg = new Guna.UI.WinForms.GunaLabel();
             this.timer = new Guna.UI.WinForms.GunaLabel();
             this.score = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // result
@@ -116,7 +117,7 @@
             // 
             this.score.AutoSize = true;
             this.score.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score.Location = new System.Drawing.Point(211, 112);
+            this.score.Location = new System.Drawing.Point(261, 123);
             this.score.Name = "score";
             this.score.Size = new System.Drawing.Size(17, 20);
             this.score.TabIndex = 5;
@@ -124,17 +125,32 @@
             this.score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.score.UseMnemonic = false;
             // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(211, 122);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(53, 20);
+            this.gunaLabel1.TabIndex = 6;
+            this.gunaLabel1.Text = "Score: ";
+            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gunaLabel1.UseMnemonic = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.score);
             this.Controls.Add(this.timer);
             this.Controls.Add(this.msg);
             this.Controls.Add(this.submission);
             this.Controls.Add(this.problem);
             this.Controls.Add(this.result);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.main_Load);
@@ -151,6 +167,7 @@
         private Guna.UI.WinForms.GunaLabel msg;
         private Guna.UI.WinForms.GunaLabel timer;
         private Guna.UI.WinForms.GunaLabel score;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }
 

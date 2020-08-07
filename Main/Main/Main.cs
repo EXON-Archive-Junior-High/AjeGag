@@ -89,7 +89,7 @@ namespace Main
         {
             result.Text = string.Empty;
             msg.Text = "맞았습니다!";
-            timer.Text = sw.Elapsed.TotalSeconds.ToString();
+            timer.Text = $"{sw.Elapsed.TotalSeconds.ToString()}s";
             score.Text = (Convert.ToInt32(score.Text) + Point.SetPoint(sw.Elapsed.TotalSeconds)).ToString();
             sw.Restart();
             CheckTime();
