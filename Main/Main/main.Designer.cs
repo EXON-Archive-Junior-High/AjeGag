@@ -82,7 +82,7 @@
             this.submission.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submission.ForeColor = System.Drawing.Color.White;
             this.submission.HoverState.Parent = this.submission;
-            this.submission.Location = new System.Drawing.Point(242, 232);
+            this.submission.Location = new System.Drawing.Point(242, 221);
             this.submission.Name = "submission";
             this.submission.ShadowDecoration.Parent = this.submission;
             this.submission.Size = new System.Drawing.Size(180, 45);
@@ -94,7 +94,7 @@
             // 
             this.msg.AutoSize = true;
             this.msg.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.msg.Location = new System.Drawing.Point(210, 290);
+            this.msg.Location = new System.Drawing.Point(210, 286);
             this.msg.Name = "msg";
             this.msg.Size = new System.Drawing.Size(0, 20);
             this.msg.TabIndex = 3;
@@ -105,7 +105,7 @@
             // 
             this.timer.AutoSize = true;
             this.timer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timer.Location = new System.Drawing.Point(211, 320);
+            this.timer.Location = new System.Drawing.Point(211, 316);
             this.timer.Name = "timer";
             this.timer.Size = new System.Drawing.Size(0, 20);
             this.timer.TabIndex = 4;

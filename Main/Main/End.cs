@@ -12,9 +12,26 @@ namespace Main
 {
     public partial class End : Form
     {
-        public End()
+        string Score = string.Empty;
+        public End(string Score)
         {
             InitializeComponent();
+            this.Score = Score;
+        }
+
+        private void End_Load(object sender, EventArgs e)
+        {
+            score.Text += Score;
+        }
+
+        private void restart_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void End_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
         }
     }
 }

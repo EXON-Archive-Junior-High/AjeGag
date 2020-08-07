@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Main
 {
@@ -18,12 +19,21 @@ namespace Main
         }
 
         string key, value = string.Empty;
+        Stopwatch sw = new Stopwatch();
+        Stopwatch allTime = new Stopwatch();
 
         private void main_Load(object sender, EventArgs e)
         {
             GetAje();
-            timer.Start();
+            allTime.Start();
+            sw.Start();
+        }
 
+        private void main_Load()
+        {
+            GetAje();
+            allTime.Start();
+            sw.Start();
         }
 
         private void submission_Click(object sender, EventArgs e)
@@ -46,8 +56,7 @@ namespace Main
             if (result.Text == value) // 답이 같지 않으면?
             {
                 GetAje();
-                result.Text = string.Empty;
-                msg.Text = "맞았습니다!";
+                Correct();
             }
             else if (value.Contains("|")) // 답의 경우수가 여러개이면?
             {
@@ -58,31 +67,58 @@ namespace Main
                     if (v[i] == result.Text)
                     {
                         GetAje();
-                        result.Text = string.Empty;
-                        msg.Text = "맞았습니다!";
+                        Correct();
                         isTrue = 1;
                         break;
                     }
                 }
                 if (isTrue == 0)
                 {
-                    result.Text = string.Empty;
-                    msg.Text = "틀렸습니다.";
+                    Wrong();
                 }
 
 
             }
             else
             {
-                result.Text = string.Empty;
-                msg.Text = "틀렸습니다.";
+                Wrong();
             }
         }
 
-        private void timer_Tick(object sender, EventArgs e)
+        private void Correct()
         {
-        
+            result.Text = string.Empty;
+            msg.Text = "맞았습니다!";
+            timer.Text = sw.Elapsed.TotalSeconds.ToString();
+            score.Text = (Convert.ToInt32(score.Text) + Point.SetPoint(sw.Elapsed.TotalSeconds)).ToString();
+            sw.Restart();
+            CheckTime();
         }
+
+        private void Wrong()
+        {
+            result.Text = string.Empty;
+            msg.Text = "틀렸습니다.";
+            CheckTime();
+        }
+
+        private void CheckTime()
+        {
+            if (allTime.Elapsed.TotalSeconds > 60)
+            {
+                End(score.Text);
+            }
+        }
+
+        private void End(string a)
+        {
+            sw = new Stopwatch();
+            allTime = new Stopwatch();
+            Reset();
+            End end = new End(a);
+            end.ShowDialog();
+        }
+
 
         private void GetAje()
         {
@@ -92,6 +128,16 @@ namespace Main
 
             problem.Text = key;
 
+        }
+
+        private void Reset()
+        {
+            score.Text = "0";
+            problem.Text = string.Empty;
+            timer.Text = string.Empty;
+            msg.Text = string.Empty;
+
+            main_Load();
         }
     }
 }
