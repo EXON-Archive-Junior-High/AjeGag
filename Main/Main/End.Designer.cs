@@ -76,6 +76,7 @@
             this.Controls.Add(this.score);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.restart);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "End";

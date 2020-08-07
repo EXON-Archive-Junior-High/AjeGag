@@ -35,6 +35,7 @@
             this.timer = new Guna.UI.WinForms.GunaLabel();
             this.score = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.skip = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // result
@@ -137,11 +138,29 @@
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.gunaLabel1.UseMnemonic = false;
             // 
+            // skip
+            // 
+            this.skip.BorderRadius = 10;
+            this.skip.CheckedState.Parent = this.skip;
+            this.skip.CustomImages.Parent = this.skip;
+            this.skip.FillColor = System.Drawing.Color.DimGray;
+            this.skip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skip.ForeColor = System.Drawing.Color.White;
+            this.skip.HoverState.Parent = this.skip;
+            this.skip.Location = new System.Drawing.Point(608, 393);
+            this.skip.Name = "skip";
+            this.skip.ShadowDecoration.Parent = this.skip;
+            this.skip.Size = new System.Drawing.Size(180, 45);
+            this.skip.TabIndex = 7;
+            this.skip.Text = "스킵";
+            this.skip.Click += new System.EventHandler(this.skip_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.skip);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.score);
             this.Controls.Add(this.timer);
@@ -149,6 +168,7 @@
             this.Controls.Add(this.submission);
             this.Controls.Add(this.problem);
             this.Controls.Add(this.result);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
@@ -168,6 +188,7 @@
         private Guna.UI.WinForms.GunaLabel timer;
         private Guna.UI.WinForms.GunaLabel score;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2Button skip;
     }
 }
 

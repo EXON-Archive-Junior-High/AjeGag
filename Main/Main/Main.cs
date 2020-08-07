@@ -130,6 +130,14 @@ namespace Main
 
         }
 
+        private void skip_Click(object sender, EventArgs e)
+        {
+            score.Text = (Convert.ToInt32(score.Text) - 5).ToString();
+            GetAje();
+            sw = new Stopwatch();
+            sw.Start();
+        }
+
         private void Reset()
         {
             score.Text = "0";
