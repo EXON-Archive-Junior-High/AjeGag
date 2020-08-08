@@ -13,6 +13,7 @@ namespace Main
 {
     public partial class Main : Form
     {
+
         public Main()
         {
             InitializeComponent();
@@ -21,6 +22,7 @@ namespace Main
         string key, value = string.Empty;
         Stopwatch sw = new Stopwatch();
         Stopwatch allTime = new Stopwatch();
+        int Score = 0;
 
         private void main_Load(object sender, EventArgs e)
         {
@@ -90,7 +92,8 @@ namespace Main
             result.Text = string.Empty;
             msg.Text = "맞았습니다!";
             timer.Text = $"{sw.Elapsed.TotalSeconds.ToString()}s";
-            score.Text = (Convert.ToInt32(score.Text) + Point.SetPoint(sw.Elapsed.TotalSeconds)).ToString();
+            score.Text = (Score + Point.SetPoint(sw.Elapsed.TotalSeconds)).ToString();
+            Score = Convert.ToInt32(score.Text);
             sw.Restart();
             CheckTime();
         }
@@ -106,7 +109,7 @@ namespace Main
         {
             if (allTime.Elapsed.TotalSeconds > 60)
             {
-                End(score.Text);
+                End(Score.ToString());
             }
         }
 
@@ -145,6 +148,7 @@ namespace Main
             timer.Text = string.Empty;
             msg.Text = string.Empty;
 
+            Score = 0;
             main_Load();
         }
     }
