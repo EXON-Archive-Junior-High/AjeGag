@@ -13,6 +13,7 @@ namespace Main
 {
     public partial class Main : Form
     {
+
         public Main()
         {
             InitializeComponent();
@@ -21,8 +22,16 @@ namespace Main
         string key, value = string.Empty;
         Stopwatch sw = new Stopwatch();
         Stopwatch allTime = new Stopwatch();
+        int Score = 0;
 
         private void main_Load(object sender, EventArgs e)
+        {
+            GetAje();
+            allTime.Start();
+            sw.Start();
+        }
+
+        private void main_Load()
         {
             GetAje();
             allTime.Start();
@@ -82,8 +91,9 @@ namespace Main
         {
             result.Text = string.Empty;
             msg.Text = "맞았습니다!";
-            timer.Text = sw.Elapsed.TotalSeconds.ToString();
-            score.Text = (Convert.ToInt32(score.Text) + Point.SetPoint(sw.Elapsed.TotalSeconds)).ToString();
+            timer.Text = $"{sw.Elapsed.TotalSeconds.ToString()}s";
+            score.Text = (Score + Point.SetPoint(sw.Elapsed.TotalSeconds)).ToString();
+            Score = Convert.ToInt32(score.Text);
             sw.Restart();
             CheckTime();
         }
@@ -99,14 +109,16 @@ namespace Main
         {
             if (allTime.Elapsed.TotalSeconds > 60)
             {
-                End();
+                End(Score.ToString());
             }
         }
 
-        private void End()
+        private void End(string a)
         {
-            Console.WriteLine("끝");
-            End end = new End();
+            sw = new Stopwatch();
+            allTime = new Stopwatch();
+            Reset();
+            End end = new End(a);
             end.ShowDialog();
         }
 
@@ -119,6 +131,25 @@ namespace Main
 
             problem.Text = key;
 
+        }
+
+        private void skip_Click(object sender, EventArgs e)
+        {
+            score.Text = (Convert.ToInt32(score.Text) - 5).ToString();
+            GetAje();
+            sw = new Stopwatch();
+            sw.Start();
+        }
+
+        private void Reset()
+        {
+            score.Text = "0";
+            problem.Text = string.Empty;
+            timer.Text = string.Empty;
+            msg.Text = string.Empty;
+
+            Score = 0;
+            main_Load();
         }
     }
 }
