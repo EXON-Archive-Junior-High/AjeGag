@@ -159,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 345);
+            this.ClientSize = new System.Drawing.Size(507, 345);
             this.Controls.Add(this.skip);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.score);
