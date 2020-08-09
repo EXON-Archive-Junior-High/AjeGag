@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(End));
             this.restart = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.score = new Guna.UI.WinForms.GunaLabel();
@@ -79,6 +80,7 @@
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.restart);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "End";

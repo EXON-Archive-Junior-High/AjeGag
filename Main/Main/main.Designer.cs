@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.result = new Guna.UI2.WinForms.Guna2TextBox();
             this.problem = new Guna.UI.WinForms.GunaLabel();
             this.submission = new Guna.UI2.WinForms.Guna2Button();
@@ -53,7 +54,7 @@
             this.result.FocusedState.Parent = this.result;
             this.result.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.result.HoverState.Parent = this.result;
-            this.result.Location = new System.Drawing.Point(215, 182);
+            this.result.Location = new System.Drawing.Point(16, 69);
             this.result.Name = "result";
             this.result.PasswordChar = '\0';
             this.result.PlaceholderText = "";
@@ -67,7 +68,7 @@
             // 
             this.problem.AutoSize = true;
             this.problem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.problem.Location = new System.Drawing.Point(210, 154);
+            this.problem.Location = new System.Drawing.Point(11, 41);
             this.problem.Name = "problem";
             this.problem.Size = new System.Drawing.Size(88, 25);
             this.problem.TabIndex = 1;
@@ -84,7 +85,7 @@
             this.submission.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submission.ForeColor = System.Drawing.Color.White;
             this.submission.HoverState.Parent = this.submission;
-            this.submission.Location = new System.Drawing.Point(242, 221);
+            this.submission.Location = new System.Drawing.Point(43, 108);
             this.submission.Name = "submission";
             this.submission.ShadowDecoration.Parent = this.submission;
             this.submission.Size = new System.Drawing.Size(180, 45);
@@ -96,7 +97,7 @@
             // 
             this.msg.AutoSize = true;
             this.msg.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.msg.Location = new System.Drawing.Point(210, 286);
+            this.msg.Location = new System.Drawing.Point(11, 173);
             this.msg.Name = "msg";
             this.msg.Size = new System.Drawing.Size(0, 20);
             this.msg.TabIndex = 3;
@@ -107,7 +108,7 @@
             // 
             this.timer.AutoSize = true;
             this.timer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timer.Location = new System.Drawing.Point(211, 316);
+            this.timer.Location = new System.Drawing.Point(12, 203);
             this.timer.Name = "timer";
             this.timer.Size = new System.Drawing.Size(0, 20);
             this.timer.TabIndex = 4;
@@ -118,7 +119,7 @@
             // 
             this.score.AutoSize = true;
             this.score.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score.Location = new System.Drawing.Point(261, 123);
+            this.score.Location = new System.Drawing.Point(62, 10);
             this.score.Name = "score";
             this.score.Size = new System.Drawing.Size(17, 20);
             this.score.TabIndex = 5;
@@ -130,7 +131,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(211, 122);
+            this.gunaLabel1.Location = new System.Drawing.Point(12, 9);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(53, 20);
             this.gunaLabel1.TabIndex = 6;
@@ -147,7 +148,7 @@
             this.skip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.skip.ForeColor = System.Drawing.Color.White;
             this.skip.HoverState.Parent = this.skip;
-            this.skip.Location = new System.Drawing.Point(608, 393);
+            this.skip.Location = new System.Drawing.Point(43, 244);
             this.skip.Name = "skip";
             this.skip.ShadowDecoration.Parent = this.skip;
             this.skip.Size = new System.Drawing.Size(180, 45);
@@ -159,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(507, 345);
             this.Controls.Add(this.skip);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.score);
@@ -169,6 +170,7 @@
             this.Controls.Add(this.problem);
             this.Controls.Add(this.result);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
