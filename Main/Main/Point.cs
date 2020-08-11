@@ -8,6 +8,7 @@ namespace Main
 {
     class Point
     {
+        // 포인트 표
         
         static public int SetPoint(double time)
         {
