@@ -128,7 +128,13 @@ namespace Main
             Data data = new Data();
 
             data.Problem(ref key, ref value);
+            if (value.Contains("|")) // 답의 경우수가 여러개이면?
+            {
+                string v = value.Split('|')[0];
+                key += $""
 
+
+            }
             problem.Text = key;
 
         }
