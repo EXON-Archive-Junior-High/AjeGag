@@ -131,11 +131,14 @@ namespace Main
             if (value.Contains("|")) // 답의 경우수가 여러개이면?
             {
                 string v = value.Split('|')[0];
-                key += $""
-
-
+                key += $" [{v.Length}글자]";
             }
-            problem.Text = key;
+            else
+            {
+                string v = value;
+                key += $" [{v.Length}글자]";
+            }
+                problem.Text = key;
 
         }
 

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{1C4DE166-4483-4533-B3C8-5F2928C5812F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Ajegag", "Ajegag\Ajegag.vdproj", "{DAA7EF75-68CA-47F4-9D07-5E377A2DDF0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{1C4DE166-4483-4533-B3C8-5F2928C5812F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C4DE166-4483-4533-B3C8-5F2928C5812F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C4DE166-4483-4533-B3C8-5F2928C5812F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA7EF75-68CA-47F4-9D07-5E377A2DDF0E}.Debug|Any CPU.ActiveCfg = Debug
+		{DAA7EF75-68CA-47F4-9D07-5E377A2DDF0E}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
