@@ -118,7 +118,7 @@ namespace Main
             sw = new Stopwatch();
             allTime = new Stopwatch();
             Reset();
-            End end = new End(a);
+            End end = new End(a, Point.Grade(Convert.ToInt32(a)));
             end.ShowDialog();
         }
 
