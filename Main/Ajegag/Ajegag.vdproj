@@ -110,6 +110,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -290,7 +298,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Ajegag"
         "ProductCode" = "8:{03D097C7-30B5-4C90-A4C2-C0CC8C702A6C}"
-        "PackageCode" = "8:{9DD72547-E6DE-466C-AF95-A02CDB517E5B}"
+        "PackageCode" = "8:{FC3A22AB-FF7D-489C-9267-9F2104019432}"
         "UpgradeCode" = "8:{67E02C6E-A20E-44B6-B8F5-DB49B9BFBD3A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -419,7 +427,21 @@
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
             "Target" = "8:_829D325596F94AD9AFECE85E2D9F5633"
-            "Folder" = "8:_7360FE46947147DDA94658EC348D0922"
+            "Folder" = "8:_E05E211D74054516847C2FCDCDDB577A"
+            "WorkingFolder" = "8:_7360FE46947147DDA94658EC348D0922"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A8434FE76D3042DC83A756CD875DDF78"
+            {
+            "Name" = "8:Ajegag"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_829D325596F94AD9AFECE85E2D9F5633"
+            "Folder" = "8:_074914AE79CF4C6D806680F26E2F6A16"
             "WorkingFolder" = "8:_7360FE46947147DDA94658EC348D0922"
             "Icon" = "8:"
             "Feature" = "8:"
