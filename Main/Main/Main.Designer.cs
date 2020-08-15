@@ -60,7 +60,7 @@
             this.result.PlaceholderText = "";
             this.result.SelectedText = "";
             this.result.ShadowDecoration.Parent = this.result;
-            this.result.Size = new System.Drawing.Size(233, 33);
+            this.result.Size = new System.Drawing.Size(726, 33);
             this.result.TabIndex = 0;
             this.result.KeyDown += new System.Windows.Forms.KeyEventHandler(this.result_KeyDown);
             // 
@@ -148,7 +148,7 @@
             this.skip.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.skip.ForeColor = System.Drawing.Color.White;
             this.skip.HoverState.Parent = this.skip;
-            this.skip.Location = new System.Drawing.Point(43, 244);
+            this.skip.Location = new System.Drawing.Point(267, 108);
             this.skip.Name = "skip";
             this.skip.ShadowDecoration.Parent = this.skip;
             this.skip.Size = new System.Drawing.Size(180, 45);
@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 345);
+            this.ClientSize = new System.Drawing.Size(754, 345);
             this.Controls.Add(this.skip);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.score);

@@ -55,6 +55,14 @@ namespace Main
             Ajegag.Add("닭에게 사이즈가 작은 옷을 입히면?", "꼭끼오|꼭기오|곡끼오");
             Ajegag.Add("감옥을 돌로 지으면 안 되는 이유는? (~~되니까)", "석방|석방되니까");
             Ajegag.Add("히어로들의 뼈는 무슨 색일까? (~~색)", "영웅본색|영웅 bone색|영웅bone색|영웅 본색");
+            Ajegag.Add("차 열쇠 색깔은?", "카키색");
+            Ajegag.Add("유모차 타면 긴장되는 이유는?", "애가 타서");
+            Ajegag.Add("고양이를 정말 좋아하는 종교는?", "Catholic|가톨릭|캐톨릭|캣홀릭|캣톨릭");
+            Ajegag.Add("노인과 바다를 3글자로?", "씨에틀|Sea에틀|씨애틀|씨에틀|시에틀|시애틀");
+            Ajegag.Add("앉으면 졸린 이유는?", "안자서");
+            Ajegag.Add("소화기 내과의사가 퇴근하는 시간은?", "내시경");
+            Ajegag.Add("땅 중에서 제일 멋있는 땅은?", "개간지");
+            Ajegag.Add("아프리카 부족 중 제일 큰 부족은?", "물부족");
         }
 
         public void Problem(ref string key, ref string value)
