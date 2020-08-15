@@ -13,15 +13,18 @@ namespace Main
     public partial class End : Form
     {
         string Score = string.Empty;
-        public End(string Score)
+        string Grade = string.Empty;
+        public End(string Score, string Grade)
         {
             InitializeComponent();
             this.Score = Score;
+            this.Grade += Grade;
         }
 
         private void End_Load(object sender, EventArgs e)
         {
             score.Text += Score;
+            grade.Text += Grade;
         }
 
         private void restart_Click(object sender, EventArgs e)

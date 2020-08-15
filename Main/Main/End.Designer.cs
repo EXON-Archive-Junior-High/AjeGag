@@ -32,6 +32,7 @@
             this.restart = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.score = new Guna.UI.WinForms.GunaLabel();
+            this.grade = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // restart
@@ -71,11 +72,22 @@
             this.score.TabIndex = 2;
             this.score.Text = "Score : ";
             // 
+            // grade
+            // 
+            this.grade.AutoSize = true;
+            this.grade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grade.Location = new System.Drawing.Point(15, 67);
+            this.grade.Name = "grade";
+            this.grade.Size = new System.Drawing.Size(63, 21);
+            this.grade.TabIndex = 3;
+            this.grade.Text = "Grade : ";
+            // 
             // End
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(229, 266);
+            this.Controls.Add(this.grade);
             this.Controls.Add(this.score);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.restart);
@@ -97,5 +109,6 @@
         private Guna.UI2.WinForms.Guna2Button restart;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel score;
+        private Guna.UI.WinForms.GunaLabel grade;
     }
 }

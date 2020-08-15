@@ -298,7 +298,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Ajegag"
         "ProductCode" = "8:{03D097C7-30B5-4C90-A4C2-C0CC8C702A6C}"
-        "PackageCode" = "8:{FC3A22AB-FF7D-489C-9267-9F2104019432}"
+        "PackageCode" = "8:{2B2E7004-F1BB-455F-9A49-F17F09397B16}"
         "UpgradeCode" = "8:{67E02C6E-A20E-44B6-B8F5-DB49B9BFBD3A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

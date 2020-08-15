@@ -174,7 +174,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
-            this.Text = "Main";
+            this.Text = "Ajegag";
             this.Load += new System.EventHandler(this.main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
